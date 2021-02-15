@@ -1,19 +1,18 @@
 #include <iostream>
 using namespace std;
-// Atrodi lielāko no 2 skaitļiem.
+// Pārbaudīt vai skaitlis atrodas starp diviem dotajiem skaitļiem!
 int main() {
-  int x, y;
-cout << "Ievadi pirmo skaitli: ";
-cin >> x;
-cout << "Ievadi otro skaitli: ";
-cin >> y;
-  if (x > y) {
-    cout << "Lielakais skaitlis ir \n";
-    cout << x;
+  int x, y, c;
+cout << "Ievadi divi skaitļi ar atstarpem un nospiež Enter: ";
+cin >> x >> y;
+
+cout << "Ievadi vienu skaitli: \n";
+cin >> c;
+  if (x < c && c < y) {
+    cout << "ir ";
   }  
   else {
-    cout << "Lielakais skaitlis ir \n";
-    cout << y;
+    cout << "nav";
   }
   return 0;
 }
