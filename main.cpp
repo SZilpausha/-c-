@@ -1,19 +1,17 @@
 #include <iostream>
 using namespace std;
-// Pārbaudīt vai skaitlis ir pāra skaitlis.
+// Atrodi lielāko no 3 skaitļiem.
 int main() {
-  int x;
-cout << "Ievadi skaitli a (0<a<100000): ";
-cin >> x;
-  if (x > 0 && x < 100000) {
-       if (x % 2 == 0) {
-          cout << "ir ";
-        } else {
-          cout << "nav";
-        }
-     }  
-   else { 
-      cout << "Skaitlis nepieder intervālam [0; 100000]!";
-    }    
+  int x, y, c;
+cout << "Ievadi tris skaitlus intervalā [-10000; 10000] (skaitļiem jābūt atdalītiem ar tukšumsimbolu): ";
+cin >> x >> y >> c;
+int max = x;
+if (y > max) {
+        max = y;
+    }
+    if (c > max) {
+        max = c;
+    }
+    cout << max << endl;
   return 0;
 }
