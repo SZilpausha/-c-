@@ -41,17 +41,35 @@
 //   }
 //   return 0;
 // } 
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     int skSk = 0, atz = 0, sum = 0;
+//     cin >> skSk;
+//     for(int i = 0; i < skSk; i = i + 1)
+//     {
+//         cin >> atz;
+//         sum = sum + atz;
+//     }
+//     cout << sum / skSk;
+//     return 0;
+// }
 #include <iostream>
 using namespace std;
 int main()
 {
-    int skSk = 0, atz = 0, sum = 0;
-    cin >> skSk;
-    for(int i = 0; i < skSk; i = i + 1)
+    string s = "";
+//    cin >> s;
+    getline(cin, s);
+    int bSk = s.size();
+    for(int nr = 0; nr < bSk; nr++)
     {
-        cin >> atz;
-        sum = sum + atz;
+        if(s[nr] == ' ')
+        {
+            s[nr] = '\n';
+        }
     }
-    cout << sum / skSk;
+    cout << s;
     return 0;
 }
