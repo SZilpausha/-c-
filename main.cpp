@@ -55,21 +55,34 @@
 //     cout << sum / skSk;
 //     return 0;
 // }
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+//     string s = "";
+// //    cin >> s;
+//     getline(cin, s);
+//     int bSk = s.size();
+//     for(int nr = 0; nr < bSk; nr++)
+//     {
+//         if(s[nr] == ' ')
+//         {
+//             s[nr] = '\n';
+//         }
+//     }
+//     cout << s;
+//     return 0;
+// }
 #include <iostream>
 using namespace std;
 int main()
 {
     string s = "";
-//    cin >> s;
-    getline(cin, s);
+    cin >> s;
     int bSk = s.size();
-    for(int nr = 0; nr < bSk; nr++)
+    for(int nr = bSk - 1; nr >= 0; nr--)
     {
-        if(s[nr] == ' ')
-        {
-            s[nr] = '\n';
-        }
+        cout << s[nr];
     }
-    cout << s;
     return 0;
 }
